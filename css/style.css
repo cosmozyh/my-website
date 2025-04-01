@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+main {
+  flex: 2;
+  padding: 20px;
+  background-color: #f4f4f4;
+  order: 2;
+  /* 确保 main 在中间 */
+}
+
+.sidebar-left {
+  flex: 1;
+  padding: 20px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+  order: 1;
+  /* 确保 sidebar-left 在左边 */
+}
+
+.sidebar-right {
+  flex: 1;
+  padding: 20px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+  order: 3;
+  /* 确保 sidebar-right 在右边 */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
